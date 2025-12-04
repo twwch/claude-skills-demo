@@ -1079,9 +1079,29 @@ Skills 和 MCP 不是互斥的，而是互补的。选择合适的工具，让 C
 
 完整代码已开源，欢迎 Star ⭐
 
+**GitHub**: https://github.com/twwch/claude-skills-demo
+
+项目包含：
 - 官方 Skill 示例：pptx、xlsx、docx、pdf
-- 自定义 Skill 示例：简历生成器
+- 自定义 Skill 示例：简历生成器（resume-gen）
 - 上传/更新脚本
+- 完整的踩坑解决方案
+
+```bash
+# 克隆项目
+git clone https://github.com/twwch/claude-skills-demo.git
+cd claude-skills-demo
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 配置环境变量
+cp .env.example .env
+# 编辑 .env 填入你的 ANTHROPIC_API_KEY
+
+# 运行示例
+python examples/skill_pptx.py
+```
 
 ---
 
